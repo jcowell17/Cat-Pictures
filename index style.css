@@ -9,39 +9,60 @@ h1 {
     font-family: monospace;
 }
 
-#img-div{
-
+.container {
+    width: 80%;
+    margin: 2rem auto;
 }
 
-#kitten-in-the-window {
-    max-width: 30%;
-    max-height: 30%;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {    
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#img-div{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 #img-caption {
-    display: flex;
-}
-
-#faces-of-cat {
-    display: flex;
-    flex-direction:column;
+    display: inline-block;
+    margin: -1em 0 1em 0; 
+    text-align: center; 
 }
 
 #img-div2 {
-    background-color: white;
-    padding: 10px;
-    max-width:25em;
-    margin: 0 auto 0 auto; 
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
  }
 
-#stocking-stuffer {
-    display: block;
-    max-width: 50%;
-    max-height: 50%;
-    margin: 0 auto 0 auto;    
-} 
-
 #img-caption2 {
-    margin: 1em 0 1em 0;
+    display: inline-block;
+    margin: -1em 0 1em 0;
+    text-align: center;
+}
+
+#img-div3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#img-caption3 {
+    display: inline-block;
+    margin: -1em 0 1em 0;
     text-align: center;
 }
