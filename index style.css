@@ -27,7 +27,7 @@ h1 {
     
 }
 
-#gallery__img {    
+#image {    
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
